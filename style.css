@@ -1,85 +1,79 @@
 
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
-    background: linear-gradient(-45deg, #283E51, #485563, #2b5876, #4e4376);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f8;
+  color: #222;
 }
 
-@keyframes gradient {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+header {
+  background: linear-gradient(to right, #3f87a6, #ebf8e1, #f69d3c);
+  text-align: center;
+  padding: 30px 20px;
+  color: white;
 }
 
-.sidebar {
-    width: 250px;
-    background-color: rgba(0,0,0,0.8);
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
-    z-index: 2;
+.logo {
+  width: 80px;
+  border-radius: 50%;
 }
 
-.sidebar h2 {
-    text-align: center;
-    color: #fff;
+nav.menu {
+  margin-top: 15px;
+}
+nav.menu a {
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px;
+  transition: background 0.3s;
+}
+nav.menu a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-.sidebar ul li {
-    margin: 20px 0;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.gallery img {
+  width: 200px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-.sidebar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s;
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #3f87a6;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #2c5f73;
 }
 
-.sidebar ul li a:hover {
-    color: #f9ca24;
-}
-
-.main-content {
-    flex-grow: 1;
-    padding: 40px;
-    overflow-y: auto;
-}
-
-.section {
-    display: none;
-    animation: fadeIn 1s ease;
-}
-
-.section.active {
-    display: block;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(10px);}
-    to {opacity: 1; transform: translateY(0);}
-}
-
-.animated-text {
-    font-size: 2.5em;
-    animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #f9ca24;
-    }
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #f6e58d;
-    }
+footer {
+  text-align: center;
+  background: #ddd;
+  padding: 20px;
 }
