@@ -2,55 +2,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Église Nkembo - Matadi</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Église Nkembo - Matadi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Église Nkembo</h2>
-        <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#culte">Horaires</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+  <header>
+    <img src="images/logo.png" class="logo" alt="Logo Église Nkembo">
+    <h1>Église Nkembo</h1>
+    <p class="slogan">« Lumière pour Matadi »</p>
+    <nav class="menu">
+      <a href="#vision">Vision</a>
+      <a href="#bkids">B-Kids</a>
+      <a href="#live">Live</a>
+      <a href="#don">Dons</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="vision">
+    <h2>Notre Vision</h2>
+    <p>Faire de toutes les nations des disciples remplis du Saint-Esprit.</p>
+    <blockquote>Jean 8:12 – « Je suis la lumière du monde ; celui qui me suit ne marchera pas dans les ténèbres. »</blockquote>
+  </section>
+
+
+  <section id="live">
+    <h2>Suivre les cultes en direct</h2>
+    <p>Rejoignez nos cultes en live sur Facebook !</p>
+    <a class="btn" href="https://www.facebook.com/profile.php?id=100064883880009" target="_blank">Voir le Live</a>
+  </section>
+
+  <section id="don">
+    <h2>Faire un Don</h2>
+    <p>Soutenez l'œuvre de Dieu en contribuant financièrement. Vos dons servent à faire avancer l'Évangile.</p>
+    <p><strong>🙏 :</strong> +243 895 700 648</p>
+  </section>
+
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <img src="images/galerie1.jpg" alt="Événement 1">
+      <img src="images/galerie2.jpg" alt="Événement 2">
+      <img src="images/galerie3.jpg" alt="Événement 3">
     </div>
-    <div class="main-content">
-        <section id="accueil" class="section active">
-            <h1 class="animated-text">Bienvenue à l’Église Nkembo</h1>
-            <p>"Là où le Saint-Esprit agit, les vies sont transformées."</p>
-        </section>
-        <section id="apropos" class="section">
-            <h2>À propos de nous</h2>
-            <p>L’Église Nkembo est une communauté située à Matadi (RDC), prêchant Jésus-Christ dans la puissance du Saint-Esprit.</p>
-        </section>
-        <section id="culte" class="section">
-            <h2>Horaires des cultes</h2>
-            <ul>
-                <li>Mardi, Mercredi et Vendredi : 17h30 - 19h30</li>
-                <li>Dimanche : 8h30 - 11h30</li>
-            </ul>
-        </section>
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Téléphone : +243 895 700 648</p>
-            <p><a href="https://wa.me/243895700648" target="_blank">Nous écrire sur WhatsApp</a></p>
-            <p><a href="https://www.facebook.com/profile.php?id=100064883880009" target="_blank">Page Facebook</a></p>
-        </section>
-    </div>
-    <script>
-        const links = document.querySelectorAll("ul li a");
-        const sections = document.querySelectorAll(".section");
-        links.forEach(link => {
-            link.addEventListener("click", e => {
-                e.preventDefault();
-                sections.forEach(section => section.classList.remove("active"));
-                const target = document.querySelector(link.getAttribute("href"));
-                target.classList.add("active");
-            });
-        });
-    </script>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li><strong>Adresse :</strong> Matadi, RDC</li>
+      <li><strong>Téléphone :</strong> +243 895 700 648</li>
+      <li><strong>Facebook :</strong> <a href="https://www.facebook.com/profile.php?id=100064883880009" target="_blank">Église Nkembo</a></li>
+      <li><strong>Jours de culte :</strong> Mar / Mer / Ven : 17h30 - 19h30 | Dimanche : 8h30 - 11h30</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Église Nkembo - Tous droits réservés.</p>
+  </footer>
+
 </body>
 </html>
